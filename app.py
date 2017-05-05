@@ -86,8 +86,7 @@ def makeWebhookResult(data):
 
     speech = "Today in " + location.get('city') + ": " + condition.get('text') + \
     
-             ", the temperature is " + int(condition.get('temp') - 32 * 5/9) + " " + "Degrees Celcius"
-
+             ", the temperature is " +  condition.get('temp') + " " + units.get('temperature')
 
     print("Response:")
     print(speech)
